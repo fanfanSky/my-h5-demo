@@ -3,14 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev:Project1": "cross-env PROJECT_NAME=Project1 vue-cli-service serve",
+    "build:Project1": "cross-env PROJECT_NAME=Project1 vue-cli-service build",
+    "dev:Project2": "cross-env PROJECT_NAME=Project2 vue-cli-service serve",
+    "build:Project2": "cross-env PROJECT_NAME=Project2 vue-cli-service build"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
-    "vant": "^2.12.50",
+    "crypto-js": "^4.0.0",
+    "face-api.js": "^0.22.2",
+    "js-md5": "^0.7.3",
+    "vant": "^2.12.27",
     "vue": "^2.6.14",
+    "vue-amap": "^0.5.10",
+    "vue-meta": "^2.4.0",
+    "vue-meta-info": "^0.1.7",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
   },
@@ -19,6 +27,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "cross-env": "^7.0.3",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.14"
