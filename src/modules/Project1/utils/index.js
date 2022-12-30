@@ -101,7 +101,6 @@ function FaceRecognition(imgStr) {
 
 
 /**
- * Author：江帆
  * @param {*} getCurrentAddress 获取当前位置信息（此方法可直接用：index.html下已经引入高德地图）
  * @param {*} result  返回值(一个Promise对象)
  */

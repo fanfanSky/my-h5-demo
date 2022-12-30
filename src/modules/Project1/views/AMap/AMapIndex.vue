@@ -15,8 +15,8 @@ export default {
   data(){
     return {
       address: "",
-      Longitude: "",  // 纬度
-      Latitude: "",  // 经度
+      Longitude: "",  // 经度
+      Latitude: "",  // 纬度
       isShow_Map: false,
     }
   },

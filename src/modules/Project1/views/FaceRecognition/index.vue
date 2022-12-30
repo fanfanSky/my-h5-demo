@@ -55,7 +55,9 @@ export default {
             that.fileStrArr.push(res.Content);
             // 把数组变成字符串
             that.fileString = that.fileStrArr + ''
+            // 调用人脸识别方法
             FaceRecognition(newStr).then(value => {
+              console.log("value",value)
               if(value) {
                 Toast.success({ message: '人脸图片'})
               } else {
