@@ -63,10 +63,11 @@ function compressBase64Img(base64, w, qlt, callback) {
 /**
  * @param {*} FaceRecognition 判断是否含有人脸方法  (face-api.js)人脸识别库
  * @param {*} imgStr 可以是base64图片，也可本地图片
+ * @param {*} result  返回值(一个Promise对象)
  */
 function FaceRecognition(imgStr) {
     let result = new Promise((resolve, reject) => {
-        //加载训练好的模型（weight，bias）
+        // 加载训练好的模型（weight，bias）
         // ageGenderNet 识别性别和年龄
         // faceExpressionNet 识别表情,开心，沮丧，普通
         // faceLandmark68Net 识别脸部特征用于mobilenet算法
